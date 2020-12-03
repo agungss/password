@@ -12,6 +12,13 @@ To build, just:
 ```
 to build the source and also execute the application.
 
+## For Windows user (64 bit)
+Just download and run the file password.exe:
+```
+C:\password.exe n z
+```
+if you want to make n password with z length of characters.
+
 ## Usage
 To use, just type in terminal/command prompt:
 ```
