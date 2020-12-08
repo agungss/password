@@ -25,7 +25,7 @@ int main(int argc, string argv[])
 
 	int nPass = 0;
 	int passLength = 0;
-	char huruf[46] = "abcdefghijklmnopqrstuvwxyz~!@#$%^&*()-+{}:<>?";
+	char huruf[46] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~!@#$%^&*()-+{}:<>?";
 	char angka[11] = "0123456789";
 	
 	char *hurufPtr;
