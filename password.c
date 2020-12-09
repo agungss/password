@@ -25,7 +25,7 @@ int main(int argc, string argv[])
 
 	int nPass = 0;
 	int passLength = 0;
-	char huruf[46] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~!@#$%^&*()-+{}:<>?";
+	char huruf[72] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~!@#$%^&*()-+{}:<>?";
 	char angka[11] = "0123456789";
 	
 	char *hurufPtr;
@@ -48,7 +48,7 @@ int main(int argc, string argv[])
 		printf("Password number %d: \n", i + 1);
 
 		for(int j = 0; j < passLength-2; j++) {
-			printf("%c", huruf[findCharNum(45)]);	
+			printf("%c", huruf[findCharNum(71)]);	
 		}
 
 		for(int j = 0; j < 2; j++) {
