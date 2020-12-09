@@ -16,7 +16,7 @@ int findCharNum();
 int main(int argc, string argv[])
 {
 	if (argc != 3) {
-		printf("Strong Password Generator ver 1.0 by Agung Sudrajat Supriatna\n\n");
+		printf("Strong Password Generator ver 1.2 by Agung Sudrajat Supriatna\n\n");
 		printf("Usage: password<space>number of password<space>password length\n");
 		
 		exit(1);
