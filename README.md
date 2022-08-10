@@ -22,7 +22,7 @@ if you want to make n password with z length of characters.
 ## Usage
 To use, just type in terminal/command prompt:
 ```
-./password<space>number of password<space>password length
+./password<space>number of password<space>password length<space>notes
 ```
 ## Help
 Further help, just email: agung_workaholic@yahoo.co.id
