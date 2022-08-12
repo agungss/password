@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
       fprintf(fptr,"%c", angka[findCharNum(10)]);
 		}
 		printf("\n\n");
-    fprintf(fptr,"\n\n");
+    fprintf(fptr,"\n");
 	}
 
 	printf("\n\n\nSave this(these) in your secret notes.\n");
