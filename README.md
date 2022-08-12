@@ -13,11 +13,11 @@ To build, just:
 to build the source and also execute the application.
 
 ## For Windows user (64 bit)
-Just download and run the file password.exe:
+Compile the file password.c and run the compiled file (password.exe)
 ```
-C:\password.exe n z
+C:\password.exe a b c
 ```
-if you want to make n password with z length of characters.
+if you want to make a password with b length of password and c for notes (no space allowed, use underscore (_)).
 
 ## Usage
 To use, just type in terminal/command prompt:
