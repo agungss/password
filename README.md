@@ -24,6 +24,19 @@ To use, just type in terminal/command prompt:
 ```
 ./password<space>number of password<space>password length<space>notes
 ```
+
+## Documentation
+Your password list will be saved in a file called pass_bank.txt
+To view the file:
+Windows user:
+```
+notepad pass_bank.txt
+```
+
+Linux/Unix User:
+```
+vim pass_bank.txt
+```
 ## Help
 Further help, just email: agung_workaholic@yahoo.co.id
 
