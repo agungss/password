@@ -40,12 +40,13 @@ int main(int argc, char *argv[])
 	int nPass = 0;
 	int passLength = 0;
   string notes;
+  //char *notes;
 
 	char huruf[72] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~!@#$%^&*()-+{}:<>?";
 	char angka[11] = "0123456789";
 	
-	char *hurufPtr;
-	char *angkaPtr;
+  char *angkaPtr;
+  char *hurufPtr;
 
 	hurufPtr = huruf;
 	angkaPtr = angka;
@@ -61,27 +62,27 @@ int main(int argc, char *argv[])
 	}
 
 
-  printf("%s ", notes);
+  //printf("%s ", notes);
   fprintf(fptr,"%s  ", notes);
 	//generate password:
 	for(int i = 0; i < nPass; i++) {
-		printf("Password number %d: \n", i + 1);
+		//printf("Password number %d: \n", i + 1);
 		// fprintf(fptr,"Password number %d: \n", i + 1);
 
 		for(int j = 0; j < passLength-2; j++) {
-			printf("%c", huruf[findCharNum(71)]);	
+			//printf("%c", huruf[findCharNum(71)]);	
       fprintf(fptr,"%c",huruf[findCharNum(71)]);
 		}
 
 		for(int j = 0; j < 2; j++) {
-			printf("%c", angka[findCharNum(10)]);
+			//printf("%c", angka[findCharNum(10)]);
       fprintf(fptr,"%c", angka[findCharNum(10)]);
 		}
-		printf("\n\n");
+		//printf("\n\n");
     fprintf(fptr,"\n");
 	}
 
-	printf("\n\n\nSave this(these) in your secret notes.\n");
+	printf("The password is saved in pass_bank.txt file.\n");
 	printf("Regularly change your password is a good habit.\n");
 	printf("The code is available on github.\n");
 
