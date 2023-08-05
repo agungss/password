@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
   // argc counts from 1.
   // argv counts from 0.
 	if (argc != 4) {
-		printf("Strong Password Generator ver 1.3 by Agung Sudrajat Supriatna\n\n");
+		printf("Strong Password Generator ver 1.4 by Agung Sudrajat Supriatna\n\n");
 		printf("Usage: password<space>number of password<space>password length<space>notes\n");
 		
 		exit(1);
@@ -42,14 +42,28 @@ int main(int argc, char *argv[])
   string notes;
   //char *notes;
 
-	char huruf[72] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~!@#$%^&*()-+{}:<>?";
+	// char huruf[72] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~!@#$%^&*()-+{}:<>?";
+	char hurufBesar[27] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char hurufKecil[27] = "abcdefghijklmnopqrstuvwxyz";
 	char angka[11] = "0123456789";
+	char symbol[20] = "~!@#$%^&*()-+{}:<>?";
 	
+  //char *angkaPtr;
+  //char *hurufPtr;
+  char *hurufBesarPtr;
+  char *hurufKecilPtr;
   char *angkaPtr;
-  char *hurufPtr;
+  char *symbolPtr;
+  
+  
 
-	hurufPtr = huruf;
+	//hurufPtr = huruf;
+	//angkaPtr = angka;
+	
+	hurufBesarPtr = hurufBesar;
+	hurufKecilPtr = hurufKecil;
 	angkaPtr = angka;
+	symbolPtr = symbol;
 	
 	//what is this?
 	srand(time(0));
@@ -69,15 +83,23 @@ int main(int argc, char *argv[])
 		//printf("Password number %d: \n", i + 1);
 		// fprintf(fptr,"Password number %d: \n", i + 1);
 
-		for(int j = 0; j < passLength-2; j++) {
+		for(int j = 0; j < passLength-3; j++) {
 			//printf("%c", huruf[findCharNum(71)]);	
-      fprintf(fptr,"%c",huruf[findCharNum(71)]);
+      fprintf(fptr,"%c",hurufBesar[findCharNum(26)]);
 		}
 
-		for(int j = 0; j < 2; j++) {
-			//printf("%c", angka[findCharNum(10)]);
-      fprintf(fptr,"%c", angka[findCharNum(10)]);
+		for(int j = 0; j < 1; j++) {
+			fprintf(fptr, "%c",hurufKecil[findCharNum(26)]);
 		}
+
+		for(int j = 0; j < 1; j++) {
+			fprintf(fptr, "%c",angka[findCharNum(10)]);
+		}
+
+		for(int j = 0; j < 1; j++) {
+			fprintf(fptr, "%c",symbol[findCharNum(19)]);
+		}
+
 		//printf("\n\n");
     fprintf(fptr,"\n");
 	}
